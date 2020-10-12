@@ -18,3 +18,7 @@ module "vnet" {
 
   depends_on = [azurerm_resource_group.example]
 }
+
+output "vnet_id" {
+    value  = module.vnet.vnet_id
+}
