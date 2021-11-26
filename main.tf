@@ -4,9 +4,9 @@ provider "azurerm" {
 
 variable "resource_group_name" {}
 
-resource "azurerm_resource_group" "aia-tf-k8s-vnet" {
+resource "azurerm_resource_group" "vnet" {
   name     = var.resource_group_name
-  location = "Canada Central"
+  location = "East US"
 }
 
 module "vnet" {
